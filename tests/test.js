@@ -12,6 +12,6 @@ describe('Post Endpoints', () => {
     app.close(); // иначе jest не завершится  
     expect(res.statusCode).toEqual(200);
     expect(res.body).toHaveProperty('Result');
-    expect(res.body.Result).toEqual(Number(x) * Number(y));
+    expect(res.body.Result).toEqual(Number(x) - Number(y));
   });
 });
