@@ -9,7 +9,7 @@ const app = x();
 Router
   .route('/')
   .get(r => r.res.end('Привет мир!'))
-  .post(r =>r.res.json({"Result": r.body.x * r.body.y}));
+  .post(r =>r.res.json({"Result": r.body.x * r.body.y})); // ok
 app
   .use(bodyParser.json())
   .use(bodyParser.urlencoded({ extended: true }))
